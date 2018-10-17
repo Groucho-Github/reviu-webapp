@@ -11,7 +11,6 @@ play me
 
 ### Tecnologías
 
-Dillinger uses a number of open source projects to work properly:
 * [Python](https://www.python.org/) - Programming Language
 * [Django](https://www.djangoproject.com) - Webapp Framework
 * [PostgreSQL](https://www.postgresql.org/) - object-relational database system

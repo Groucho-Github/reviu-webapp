@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'reviu_webapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'reviu_db',
+        'USER': 'heroes',
+        'PASSWORD': 'y0_y4_g4n3',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 

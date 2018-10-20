@@ -1,5 +1,5 @@
 # Reviú
-[![Django](http://nightcrawler2114.pythonanywhere.com/static/CV/img/django.png)](https://www.djangoproject.com/)]
+[Django](http://nightcrawler2114.pythonanywhere.com/static/CV/img/django.png)](https://www.djangoproject.com/)]
 Unir reviewers de productos o servicios con la gente que los necesite y potenciar su alcance e influencia.
 
 ## Características
@@ -12,7 +12,7 @@ Unir reviewers de productos o servicios con la gente que los necesite y potencia
 > Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who attempt to poison and destroy my brothers.
 
 play me
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/x2WK_eWihdU/0.jpg)](http://www.youtube.com/watch?v=x2WK_eWihdU?t=57)
+[![Ezekiel 25:17](http://img.youtube.com/vi/x2WK_eWihdU/0.jpg)](http://www.youtube.com/watch?v=x2WK_eWihdU?t=57)
 
 ## Tecnologías Usadas
 

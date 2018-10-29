@@ -3,6 +3,8 @@ from django.shortcuts import render
 # Create your views here.
 from django.http import HttpResponse
 
+def login(request):
+    return render(request, 'reviu/login.html')
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the reviu index.")
+def home(request):
+	return render(request, 'reviu/home.html')

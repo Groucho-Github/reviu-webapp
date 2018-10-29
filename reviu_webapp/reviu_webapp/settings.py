@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'reviu.apps.ReviuAppConfig',
+    'social_django'
 ]
 
 MIDDLEWARE = [
@@ -50,11 +52,15 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'reviu_webapp.urls'
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'home'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='206824141060-fkct7e9lbfpim2ud73ttga36ap3qdvil.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'pOIMQFCTNjHJ9OQHPsyHbfay'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -62,10 +68,22 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
 ]
+
+AUTHENTICATION_BACKENDS = (
+ 'social_core.backends.open_id.OpenIdAuth',  # for Google authentication
+ 'social_core.backends.google.GoogleOpenId',  # for Google authentication
+ 'social_core.backends.google.GoogleOAuth2',  # for Google authentication
+ #'social_core.backends.github.GithubOAuth2',  # for Github authentication
+ #'social_core.backends.facebook.FacebookOAuth2',  # for Facebook authentication
+ 
+ 'django.contrib.auth.backends.ModelBackend',
+)
 
 WSGI_APPLICATION = 'reviu_webapp.wsgi.application'
 
@@ -76,7 +94,7 @@ WSGI_APPLICATION = 'reviu_webapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'reviu_db',
+        'NAME': 'reviudb',
         'USER': 'heroes',
         'PASSWORD': 'y0_y4_g4n3',
         'HOST': '127.0.0.1',

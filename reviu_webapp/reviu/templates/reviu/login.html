@@ -1,7 +1,17 @@
 {% extends "reviu/template.html" %}
-
-
+{% load static %}
 {% block content %}
-  <h2>Login</h2>
-  <a href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a><br>
+	<div class="row">
+		<div class="col-sm-3"></div>
+		<div class="col-sm-6">
+			<div class="card-style rounded">
+				<img src="{% static 'reviu/img/logo_rc.png' %}" alt="Google sign-in img">
+				<h2 class="white-text">Reviú</h2>
+				<a class="white-text" href="{% url 'social:begin' 'google-oauth2' %}">
+					<img src="{% static 'reviu/img/btn_google_signin_light_normal_web.png' %}" alt="Google sign-in img">
+				</a>
+			</div>
+		</div>
+		<div class="col-sm-3"></div>
+	</div>
 {% endblock %}

@@ -1,0 +1,16 @@
+.background{
+	background-image: url("/static/reviu/img/abstract_backgound.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.white-text{
+	color: white;
+}
+.card-style{
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+.ranking-img{
+	height: 50%;
+}
